@@ -1,0 +1,278 @@
+/* 🌟 General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #333;
+  text-align: center;
+}
+
+/* 🔹 Navbar */
+.navbar {
+  background: #007bff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffeb3b;
+}
+
+/* 📦 Container */
+.container {
+  max-width: 500px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* 📝 Headings */
+h2 {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* 🔘 Input Fields */
+.input-box {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-box:focus {
+  border-color: #007bff;
+}
+
+/* 🖲️ Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* 📸 QR Code */
+.qr-container {
+  margin-top: 20px;
+}
+
+.qr-container canvas {
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+/* 🎨 Home Page Styling */
+.home-container {
+  max-width: 600px;
+  margin: 100px auto;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.home-container h1 {
+  font-size: 28px;
+  color: #007bff;
+}
+
+.home-container p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* 🖲️ Buttons */
+.home-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 20px;
+  text-decoration: none;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* 🌟 General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #333;
+  text-align: center;
+}
+
+/* 🔹 Navbar */
+.navbar {
+  background: #007bff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* 🔘 Menu Button (Always Visible on Desktop) */
+.menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  margin-left: auto; /* Always show the button */
+}
+
+/* 🔹 Navigation Links */
+.nav-links {
+  list-style: none;
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background: white;
+  width: 200px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.nav-links.show {
+  display: flex; /* Show when menu is clicked */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #007bff;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* 📱 Hide Menu Button on Mobile */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: none; /* Hide on mobile */
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row; /* Always show links on mobile */
+    position: static;
+    background: transparent;
+    box-shadow: none;
+    width: auto;
+  }
+
+  .nav-links a {
+    color: white;
+    padding: 10px;
+  }
+}
